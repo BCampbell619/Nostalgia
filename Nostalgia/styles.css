@@ -1,0 +1,935 @@
+/* Color Schema
+Base Blue: #27408B
+Light Blue: #B5BEDA
+Med Light Blue: #5367A3
+Med Dark Blue: #0F2464
+Dark Blue: #020F34
+
+Complimentary Colors:
+Orange
+Base Orange: #CE7727
+Light Orange: #FFE6CE
+Med Light Orange: #F1AC6C
+Med Dark Orange: #934A06
+Dark Orange: #4D2500
+
+Yellow
+Base Yellow: #CEB427
+Light Yellow: #FFF7CE
+Med Light Yellow: #F1DC6C
+Med Dark Yellow: #937D06
+Dark Yellow: #4D4100
+
+Section Table of Contents:
+
+1.0     - General Tag Styes
+2.0     - Navigation Styles
+3.0     - Heading Styles
+4.0     - Background Styles
+5.0     - Images Styles
+6.0     - Form Styles
+7.0     - Text Styles
+8.0     - Table Styles
+9.0     - Footer Styles
+10.0    - Media Queries
+
+*/
+
+/*====================================================================================================================================================
+                                                                        Section 1.0                                                                         
+====================================================================================================================================================*/
+
+body{
+    font-family: "neuropol-nova", sans-serif;
+    background: #FFF;
+    font-weight: 400;
+}
+
+p, label, button, a, th, td {
+    font-size: 18px;
+}
+
+th {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+td {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/*====================================================================================================================================================
+                                                                        Section 2.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Navigation Styles----------------------------------------------------*/
+
+/*Navigation base styles */
+/*--------------------------------------------------------------*/
+
+nav {
+    margin: 0px;
+    width: auto;
+}
+
+nav ul {
+    list-style:none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+}
+
+nav a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+nav a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/* Navigation custom styles */
+/*--------------------------------------------------------------*/
+.navright {
+    float: right;
+} /* main.php, album.php, contribute.php, profile.php */
+
+.navright a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    color: #000;
+} /* main.php, album.php, contribute.php, profile.php */
+
+.navright ul {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+} /* main.php, album.php, contribute.php, profile.php */
+
+.navright li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+} /* main.php, album.php, contribute.php, profile.php */
+
+.navright a:hover {
+    border: none;
+    background-color: #5367A3;
+    color: #FFF;
+    font-weight: 400;
+} /* main.php, album.php, contribute.php, profile.php */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    font-size: 23px;
+    color: #000;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF7CE;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-content a {
+    color: #0F2464;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+}
+
+.drop-content a:hover {
+    background-color: #F1DC6C;
+    color: #27408B;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0F2464;
+    color: #FFF;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/* Nav Right Small Styles */
+/*--------------------------------------------------------------*/
+
+.navright-sm {
+    display: none;
+    float: right;
+    text-align: center;
+}
+
+.navright-sm ul li {
+    display: inline-block;
+    list-style: none;
+    padding-top: 6px;
+    margin: 0px;
+}
+
+.navright-sm a{
+    padding: 3px;
+    font-size: 18px;
+    color: #000;
+}
+
+.navright-sm a:hover {
+    border: none;
+    background-color: #888;
+    color: #FFF;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------*/
+
+.navleft{
+    float: left;
+} /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+
+.navleft ul {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+} /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+
+.navleft li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+} /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+
+.navleft a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 10px;
+} /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+
+.navleft a:hover {
+    background-color: #5367A3;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.navleft-sm {
+    display: none;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------End of Navigation Styles-------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 3.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Heading Styles----------------------------------------------------*/
+
+/* index.php & main.php Heading styles */
+/*--------------------------------------------------------------*/
+
+.hero {
+    background: #415697;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+} /* index.php, main.php */
+
+.hero h1 {
+    font-weight: 400;
+    font-size: 96px;
+} /* index.php, main.php */
+
+#subheading {
+    font-weight: 300;
+    font-size: 24px;
+} /* index.php, main.php */
+
+#enter {
+    border-bottom: solid 1px #eee;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/* contribute.php Heading Styles */
+/*--------------------------------------------------------------*/
+
+#audioheader {
+    background-color: #A9A9A9;
+    border-radius: 3px 3px 0px 0px;
+    color: #4169E1;
+    text-align: center;
+    margin: -5px 0px 10px;
+    padding: 0px 0px 10px;
+}
+
+#imgHeader {
+    background-color: #A9A9A9;
+    color: #555;
+    text-align: center;
+    margin: 5px 0px 10px;
+    padding: 0px 0px 10px;
+}
+
+#urlheader {
+    background-color: #A9A9A9;
+    color: #DD0000;
+    text-align: center;
+    margin: 5px 0px 10px;
+    padding: 0px 0px 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+/* signup.php, & login.php Heading styles */
+/*--------------------------------------------------------------*/
+
+#signupheader {            
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #4169E1;
+} /* signup.php, & login.php */
+
+/*--------------------------------------------------------------*/
+
+
+
+/* profile.php Heading styles */
+/*--------------------------------------------------------------*/
+
+#proheader {
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #DCDCDC;
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: #333;
+} /* profile.php */
+
+/*--------------------------------------------------------------*/
+
+
+/* album.php Heading Styles */
+/*--------------------------------------------------------------*/
+.albumMarquee {
+    font-weight: 500;
+    text-align: center;
+} /* album.php */
+
+.albumError {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+} /* album.php */
+
+/*--------------------------------------------------------------*/
+
+/*---------------------------------------------------------End of Heading Styles-------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 4.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Background Styles----------------------------------------------------*/
+
+/* Navigation Background style */
+/*--------------------------------------------------------------*/
+
+.log {
+    background-color: #B5BEDA;
+} /* all pages - except for user_get & passwrd_reset pages */
+
+/*--------------------------------------------------------------*/
+
+
+/* album.php Background style */
+/*--------------------------------------------------------------*/
+
+.backmeup {
+    background-color: #333;
+    padding-top: 30px;
+    padding-bottom: 10px;
+} /* album.php */
+
+#albumList {
+    background-color: #FFF;
+}
+
+#albumList a{
+    color: #020F34;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#albumList a:hover {
+    color: #5367A3;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/* contirbute.php Background Style */
+/*--------------------------------------------------------------*/
+
+#contributeBody {
+    background-color: #DCDCDC;
+    border-radius: 3px;
+    padding: 5px 0px 0px;
+}
+
+/*--------------------------------------------------------------*/
+
+/* profile.php Background style */
+/*--------------------------------------------------------------*/
+
+#proMain {
+    background-color: #DCDCDC;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 30px 20px;
+} /* profile.php */
+
+#proMain h2 {
+    background-color: #3A5FCD;
+    color: #FFF;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 300;
+} /* profile.php */
+
+#proMain h3 {
+    background-color: #9C1010;
+    color: #FFF;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 300;
+} /* profile.php */
+
+/*--------------------------------------------------------------*/
+
+/*---------------------------------------------------------End of background Styles-------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 5.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Image Styles----------------------------------------------------*/
+
+/* Album Img Styles */
+/*--------------------------------------------------------------*/
+.albumBack {
+    background: #FFE6CE;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    display: inline-block;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 300px;
+}
+.albumImg {
+    border-radius: 100%;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 300px;
+}
+
+.albumImg img {
+    border-radius: 100%;
+}
+
+.albumImg:Hover, img:hover {
+    opacity: 0.9;
+    border-radius: 3%;
+    transition: 0.3s
+}
+
+#img-scroll {
+    border-bottom: solid 1px #eee;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
+    overflow-x: scroll;
+}
+
+.sm-large {
+    display: inline-block;
+}
+
+.sm-main {
+    display: none;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------End of Image Styles-------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 6.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Form Styles----------------------------------------------------*/
+
+/* Base From Styles */
+/*--------------------------------------------------------------*/
+
+form span {
+    font-weight: 800;
+} /*applies to any <span> in a form*/
+
+/*--------------------------------------------------------------*/
+
+
+
+/* Form Button Style */
+/*--------------------------------------------------------------*/
+
+.myfrmbtn {
+    border-style: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    background-color: #27408B;
+    color: #FFF;
+    font-weight: 500;
+} /* login.php, passwrd_reset.php, signup.php, & user_get.php */
+
+/*--------------------------------------------------------------*/
+
+
+
+/* Contribute & Profile Form Styles */
+/*--------------------------------------------------------------*/
+
+#errMsg {
+	color: #DD0000;
+	font-weight: 300;
+} /* contribute.php */
+
+#formHead {
+	color: #DD0000;
+	font-weight: 600;
+    text-align: center;
+} /* contribute.php */
+
+#resetMsg {
+	color: #777;
+	font-weight: 300;
+} /* contribute.php, profile.php */
+
+/*--------------------------------------------------------------*/
+
+
+
+/* Login Form Styles */
+/*--------------------------------------------------------------*/
+
+#loginForm a {
+    background-color: #EBEBEB;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 0px 15px;
+    padding: 10px;
+} /* login.php */
+
+#loginForm button:hover {
+    background-color: #6495ED;
+} /* login.php */
+
+/*--------------------------------------------------------------*/
+
+
+/* Sign Up Form Styles */
+/*--------------------------------------------------------------*/
+
+.note {
+	font-weight: 200;
+	color: #0A0A0A;
+	font-style: italic;
+} /* signup.php */
+
+#signupForm button:hover{
+    background-color: #6495ED;
+}
+
+/*--------------------------------------------------------------*/
+
+/* User Name Get Form Styles */
+/*--------------------------------------------------------------*/
+
+#userGet {
+    padding: 80px 0px;
+} /* user_get.php */
+
+#userGet a {
+    margin: 0px 15px;
+}
+
+#userGet button:hover {
+    background-color: #6495ED;
+} /* user_get.php */
+
+#userCancel {
+    background-color: #EBEBEB;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 10px 15px;
+} /* user_get.php */
+
+/*--------------------------------------------------------------*/
+
+
+
+/* Password Reset From Styles */
+/*--------------------------------------------------------------*/
+
+#passGet button:hover {
+     background-color: #6495ED;
+} /* passwrd_reset.php */
+
+#passwordCancel {
+    background-color: #EBEBEB;
+    border-radius: 3px;
+    font-weight: 400;
+    margin: 0px 15px;
+    padding: 10px 15px;
+} /* passwrd_reset.php */
+
+/*--------------------------------------------------------------*/
+
+/*----------------------------------------------------end of Form Styles------------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 7.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Text Styles----------------------------------------------------*/
+
+/* Profile Text Styles */
+/*--------------------------------------------------------------*/
+
+.proLabel {
+    color: #0A0A0A;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.proData {
+    font-weight: 300;
+    font-size: 18px;
+    padding: 2px 0px 2px 20px;
+}
+
+.reqfld {
+    color: #DD0000;
+}
+
+#reset {
+    width: 0px;
+    height: 0px;
+    display: none;
+    transition: width 1s, height 2s;
+    transition-timing-function: ease-in;
+}
+
+#reset h2 {
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    background-color: #EAEAEA;
+}
+
+#reset button {
+    border-style: none;
+    border-radius: 3px;
+    border: solid 1px #EAEAEA;
+    background-color: #FFF;
+    color: #3A5FCD;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/*----------------------------------------------------end of Text Styles------------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 8.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Table Styles----------------------------------------------------*/
+
+/* Profile Table Styles */
+/*--------------------------------------------------------------*/
+.memTbl {
+    padding: 5px 15px;
+    width: 100%;
+} /* profile.php */
+
+.memTbl th {
+    padding: 5px;
+    width: 150px;
+} /* profile.php */
+
+.memTbl td {
+    padding: 5px;
+    width: 150px;
+    text-align: left;
+} /* profile.php */
+
+.mytblbtn {
+    border-style: none;
+    border-radius: 3px;
+    border: solid 1px #EAEAEA;
+    background-color: #FFF;
+    color: #3A5FCD;
+    padding: 5px 10px;
+    font-weight: 500;
+} /* profile.php */
+
+/*--------------------------------------------------------------*/
+
+/*----------------------------------------------------end of Table Styles------------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 9.0                                                                         
+====================================================================================================================================================*/
+
+
+/*-------------------------------------------------------------Footer Styles----------------------------------------------------*/
+
+/* Footer styles */
+/*--------------------------------------------------------------*/
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------*/
+
+/*----------------------------------------------------end of Footer Styles------------------------------------------------------*/
+
+
+/*====================================================================================================================================================
+                                                                        Section 10.0                                                                         
+====================================================================================================================================================*/
+
+@media screen and (max-width: 576px) {
+    .albumBack {
+        background-color: #FFF;
+        border-bottom: solid 1px #eee;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+        display: inline-block;
+        height: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    
+    .albumBack:hover {
+        background-color: #B5BEDA;
+    }
+    
+    .sm-large {
+        display: none;
+    }
+    
+    .sm-main {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .sm-main p {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 4%;
+        text-align: center;
+    }
+    
+    .sm-main a{
+        text-decoration: none;
+        color: #5367A3;
+    }
+    
+    .sm-main a:hover {
+        color: #F1DC6C;
+    }
+    
+    .albumImg {
+        display: none;
+    }
+    
+    
+    .hero h1 {
+        font-weight: 400;
+        font-size: 60px;
+    } /* index.php, main.php */
+    
+    .navright {
+        display: none;
+        float: none;
+    } /* main.php, album.php, contribute.php, profile.php */
+    
+    .navright-sm {
+        display: inline-block;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    .navright-sm ul, li {
+        display: inline-block;
+        font-size: 18px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+    
+    .navright-sm a{
+        display: block;
+        padding: 8px;
+        font-size: 18px;
+        color: #000;
+        text-align: left;
+    }
+    
+    .navright-sm a:hover {
+        border: none;
+        background-color: #5367A3;
+        color: #FFF;
+        font-weight: 400;
+    }
+    
+    .navleft {
+        display: none;
+    }
+    
+    .navleft-sm {
+        display: block;
+        width: inherit;
+    }
+    
+    .navleft-sm ul {
+        list-style: none;
+        display: block;
+        margin: 0px;
+    } /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+    
+    .navleft-sm li {
+        display: block;
+        list-style: none;
+        margin: 0px;
+    } /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+    
+    .navleft-sm a {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        padding: 8px;
+    } /* main.php, album.php, contribute.php, profile.php, login.php, signup.php */
+    
+    .navleft-sm a:hover {
+        background-color: #5367A3;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+}
